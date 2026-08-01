@@ -283,8 +283,9 @@ footer {
     header {
         position: fixed;
         top: 0;
+        left: 0;
         width: 100%;
-        height: auto;
+        z-index: 1000;
         transition: transform 0.3s ease;
     }
 
@@ -293,7 +294,6 @@ footer {
     }
 
 }
-
     nav {
         flex-direction: column;
         padding: 10px;
