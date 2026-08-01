@@ -316,3 +316,16 @@ footer {
 .contact-box button:hover {
     background: #6CBF84;
 }
+#privacy h3 {
+    color: #12355B;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+#privacy ul {
+    margin-bottom: 25px;
+}
+
+#privacy p {
+    margin-bottom: 15px;
+}
