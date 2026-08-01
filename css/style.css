@@ -284,3 +284,35 @@ footer {
     }
 
 }
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.contact-box button {
+    margin-top: 15px;
+    padding: 14px 30px;
+    background: #12355B;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.contact-box button:hover {
+    background: #6CBF84;
+}
