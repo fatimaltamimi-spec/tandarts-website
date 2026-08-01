@@ -385,3 +385,8 @@ footer {
     }
 
 }
+.header-logo {
+    width: 90px;
+    height: auto;
+    display: block;
+}
