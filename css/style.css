@@ -91,18 +91,18 @@ nav a {
     justify-content: center;
 }
 
-.photo-placeholder {
+.profile-photo {
+
     width: 350px;
     height: 350px;
-    border-radius: 50%;
-    background: #dfeff5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #12355B;
-    text-align: center;
-}
 
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+}
 .button {
     display: inline-block;
     margin-top: 30px;
