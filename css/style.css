@@ -228,11 +228,13 @@ footer {
     }
 
 
-  .profile-photo {
+.profile-photo {
 
     width:240px;
-
     height:240px;
+
+    object-fit: cover;
+    object-position: center 25%;
 
 }
 
