@@ -287,3 +287,31 @@ footer {
     }
 
 }
+@media (max-width: 768px) {
+
+    header {
+        position: relative;
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .language {
+        margin-top: 10px;
+    }
+
+}
