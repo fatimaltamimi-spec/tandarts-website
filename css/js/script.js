@@ -1,16 +1,23 @@
-let lastScroll = 0;
-const header = document.querySelector("header");
+document.addEventListener("DOMContentLoaded", function () {
 
-window.addEventListener("scroll", () => {
+    let lastScroll = 0;
+    const header = document.querySelector("header");
 
-    let currentScroll = window.pageYOffset;
+    if (!header) return;
 
-    if (currentScroll > lastScroll && currentScroll > 100) {
-        header.classList.add("hide");
-    } else {
-        header.classList.remove("hide");
-    }
+    window.addEventListener("scroll", function () {
 
-    lastScroll = currentScroll;
+        let currentScroll = window.pageYOffset;
+
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            header.classList.add("hide");
+        } 
+        else {
+            header.classList.remove("hide");
+        }
+
+        lastScroll = currentScroll;
+
+    });
 
 });
