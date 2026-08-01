@@ -343,25 +343,27 @@ footer {
 
 @media (max-width: 900px) {
 
-    .menu-toggle {
-        display: block;
+    nav {
+        flex-direction: row;
+        padding: 15px 20px;
     }
 
 
-    nav {
-        flex-direction: row;
-        justify-content: space-between;
+    .menu-toggle {
+        display: block;
     }
 
 
     .nav-menu {
         display: none;
         position: absolute;
-        top: 70px;
+        top: 75px;
         left: 0;
         width: 100%;
         background: white;
-        padding: 25px;
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 0;
         box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
 
@@ -372,7 +374,12 @@ footer {
 
 
     .nav-menu li {
-        margin: 10px 0;
+        margin: 12px 0;
+    }
+
+
+    .language {
+        display: none;
     }
 
 }
