@@ -450,20 +450,57 @@ footer {
 }
 @media(max-width:900px) {
 
-    #diensten .card,
-    #registratie .card,
-    #opleiding .card {
+    /* Tandheelkundige behandelingen - links */
+    #diensten .card {
         opacity: 0;
         transform: translateX(-40px);
         transition: all 0.6s ease;
     }
 
+    #diensten .card.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
 
-    #diensten .card.show,
-    #registratie .card.show,
+
+    /* Registratie - van onderen */
+    #registratie .card {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.6s ease;
+    }
+
+    #registratie .card.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+    /* Opleiding - van rechts */
+    #opleiding .card {
+        opacity: 0;
+        transform: translateX(40px);
+        transition: all 0.6s ease;
+    }
+
     #opleiding .card.show {
         opacity: 1;
         transform: translateX(0);
+    }
+
+
+    /* kleine vertraging tussen de kaarten */
+    #diensten .card:nth-child(2),
+    #registratie .card:nth-child(2),
+    #opleiding .card:nth-child(2) {
+        transition-delay: 0.15s;
+    }
+
+
+    #diensten .card:nth-child(3),
+    #registratie .card:nth-child(3),
+    #opleiding .card:nth-child(3) {
+        transition-delay: 0.3s;
     }
 
 }
