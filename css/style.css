@@ -438,8 +438,8 @@ footer {
 
 .card img.education-icon {
     margin-top: auto;
-    width: 180px !important;
-    height: 180px !important;
+    width: 160px !important;
+    height: 160px !important;
     max-width: none !important;
     max-height: none !important;
     object-fit: contain;
