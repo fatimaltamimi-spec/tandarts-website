@@ -22,3 +22,18 @@ const menu = document.querySelector(".nav-menu");
 menuButton.addEventListener("click", () => {
     menu.classList.toggle("active");
 });
+const cards = document.querySelectorAll("#diensten .card");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+cards.forEach(card => {
+    observer.observe(card);
+});
