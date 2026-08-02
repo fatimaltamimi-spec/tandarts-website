@@ -425,14 +425,11 @@ footer {
 ```
 ```
 .education-icon {
-    width: 35px;
-    height: 35px;
+    width: 25px !important;
+    height: 25px !important;
+    max-width: 25px !important;
+    max-height: 25px !important;
     object-fit: contain;
     display: block;
     margin: 15px auto 0 auto;
-    max-width: 100%;
-}
-
-.card {
-    overflow: hidden;
 }
