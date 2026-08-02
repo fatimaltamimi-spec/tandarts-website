@@ -503,4 +503,48 @@ footer {
     }
 
 }
-```
+```/* ================= MOBIELE ANIMATIES ================= */
+
+@media(max-width:900px) {
+
+    /* Tandheelkundige behandelingen */
+    #diensten .card {
+        opacity: 0;
+        transform: translateX(-40px);
+        transition: all 0.6s ease;
+    }
+
+    #diensten .card.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+    /* Registratie */
+    #registratie .card {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.6s ease;
+    }
+
+    #registratie .card.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ================= LAPTOP/DESKTOP GEEN ANIMATIES ================= */
+
+@media(min-width:901px) {
+
+    #diensten .card,
+    #registratie .card,
+    #opleiding .card {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+}
