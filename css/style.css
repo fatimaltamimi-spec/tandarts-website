@@ -424,12 +424,12 @@ footer {
 
 ```
 ```
-.education-icon {
-    width: 25px !important;
-    height: 25px !important;
-    max-width: 25px !important;
-    max-height: 25px !important;
-    object-fit: contain;
+.card img.education-icon {
+    width: 30px !important;
+    height: 30px !important;
+    max-width: 30px !important;
+    max-height: 30px !important;
+    object-fit: contain !important;
     display: block;
     margin: 15px auto 0 auto;
 }
