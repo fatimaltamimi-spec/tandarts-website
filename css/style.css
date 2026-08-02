@@ -1,3 +1,4 @@
+```css
 * {
     margin: 0;
     padding: 0;
@@ -29,77 +30,76 @@ header {
     transition: transform 0.3s ease;
 }
 
-
 header.hide {
     transform: translateY(-100%);
 }
 
 
 nav {
-    max-width: 1200px;
-    margin: auto;
-    padding: 15px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    max-width:1200px;
+    margin:auto;
+    padding:15px 30px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 
 .logo {
-    color: #12355B;
-    font-size: 22px;
-    font-weight: 700;
+    color:#12355B;
+    font-size:22px;
+    font-weight:700;
 }
 
 
 .logo span {
-    display: block;
-    font-size: 13px;
-    font-weight: 400;
+    display:block;
+    font-size:13px;
+    font-weight:400;
 }
 
 
 .header-logo {
-    width: 80px;
-    height: auto;
+    width:80px;
+    height:auto;
 }
 
 
-/* Desktop menu */
+/* ================= MENU ================= */
 
 .nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 25px;
+    display:flex;
+    list-style:none;
+    gap:25px;
 }
 
 
 .nav-menu a,
 .language a {
-    text-decoration: none;
-    color: #12355B;
-    font-weight: 500;
+    text-decoration:none;
+    color:#12355B;
+    font-weight:500;
 }
 
 
 .language a {
-    color: #6CBF84;
-    font-weight: 600;
+    color:#6CBF84;
+    font-weight:600;
 }
 
 
 .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 30px;
-    color: #12355B;
-    cursor: pointer;
+    display:none;
+    background:none;
+    border:none;
+    font-size:30px;
+    color:#12355B;
+    cursor:pointer;
 }
 
 
 .language-mobile {
-    display: none;
+    display:none;
 }
 
 
@@ -107,47 +107,47 @@ nav {
 /* ================= HERO ================= */
 
 .hero {
-    min-height: 100vh;
-    padding: 140px 8% 80px;
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    background: linear-gradient(135deg,#EAF4FF,#ffffff);
+    min-height:100vh;
+    padding:140px 8% 80px;
+    display:flex;
+    align-items:center;
+    gap:60px;
+    background:linear-gradient(135deg,#EAF4FF,#ffffff);
 }
 
 
 .hero-text {
-    flex: 1;
+    flex:1;
 }
 
 
 .hero-text h1 {
-    font-size: 45px;
-    line-height: 1.2;
-    color: #12355B;
-    margin-bottom: 25px;
+    font-size:45px;
+    line-height:1.2;
+    color:#12355B;
+    margin-bottom:25px;
 }
 
 
 .hero-text p {
-    font-size: 18px;
+    font-size:18px;
 }
 
 
 .hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+    flex:1;
+    display:flex;
+    justify-content:center;
 }
 
 
 .profile-photo {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    object-position: center 25%;
-    border-radius: 50%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    object-position:center 25%;
+    border-radius:50%;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
 
@@ -155,13 +155,13 @@ nav {
 /* ================= BUTTON ================= */
 
 .button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 15px 35px;
-    background: #12355B;
-    color: white;
-    border-radius: 30px;
-    text-decoration: none;
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#12355B;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
 }
 
 
@@ -208,20 +208,25 @@ h3 {
     padding:30px;
     border-radius:20px;
     box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    display:flex;
+    flex-direction:column;
 }
 
 
-/* ================= ICONEN OPLEIDINGEN ================= */
 
-/* ================= ICONEN OPLEIDINGEN ================= */
+/* ================= ICONEN ================= */
 
 .card img.education-icon {
-    width:140px;
-    height:140px;
-    max-width:100%;
+    margin-top:auto;
+    width:160px !important;
+    height:160px !important;
+    max-width:none !important;
+    max-height:none !important;
     object-fit:contain;
     display:block;
-    margin:25px auto 0 auto;
+    margin-left:auto;
+    margin-right:auto;
+    transform:translateY(10px);
 }
 
 
@@ -231,9 +236,8 @@ h3 {
 ul {
     margin:20px 0 20px 25px;
 }
-
-
-
+```
+```css
 /* ================= CONTACT ================= */
 
 .contact-box {
@@ -274,7 +278,11 @@ ul {
 
 .contact-box button:hover {
     background:#6CBF84;
-}/* ================= PRIVACY ================= */
+}
+
+
+
+/* ================= PRIVACY ================= */
 
 #privacy h3 {
     margin-top:35px;
@@ -317,22 +325,14 @@ footer {
     .nav-menu {
 
         display:none;
-
         position:absolute;
-
         top:75px;
         left:0;
-
         width:100%;
-
         background:white;
-
         flex-direction:column;
-
         text-align:center;
-
         padding:25px 0;
-
         box-shadow:0 10px 25px rgba(0,0,0,0.1);
 
     }
@@ -358,14 +358,14 @@ footer {
     }
 
 
+
+    /* HERO */
+
     .hero {
 
         min-height:auto;
-
         padding:120px 25px 70px;
-
         flex-direction:column-reverse;
-
         text-align:center;
 
     }
@@ -382,192 +382,125 @@ footer {
 
 
     .profile-photo {
-
         width:240px;
         height:240px;
-
     }
 
 
+
+    /* SECTIONS */
+
     section {
-
         padding:70px 25px;
-
     }
 
 
     h2 {
-
         font-size:28px;
-
     }
 
+
+
+    /* CARDS */
 
     .cards {
-
         grid-template-columns:1fr;
-
     }
+
 
 
     .button {
-
         width:100%;
         max-width:300px;
-
     }
 
 
-.card img.education-icon {
 
-    width:110px;
-    height:110px;
-    max-width:100%;
-    max-height:110px;
-    object-fit:contain;
-    margin:20px auto 0 auto;
+    /* ICONEN */
+
+    .card img.education-icon {
+
+        width:120px !important;
+        height:120px !important;
+
+    }
 
 }
 
-}
 
-.card {
-    display: flex;
-    flex-direction: column;
-}
 
-.card img.education-icon {
-    margin-top: auto;
-    width: 160px !important;
-    height: 160px !important;
-    max-width: none !important;
-    max-height: none !important;
-    object-fit: contain;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    transform: translateY(10px);
-}
+/* ================= SCROLL ANIMATIES MOBIEL ================= */
+
+@media(max-width:900px) {
+
+
+    /* Tandheelkundige behandelingen */
+    #diensten .card {
+
+        opacity:0;
+        transform:translateX(-40px);
+        transition:opacity 0.6s ease, transform 0.6s ease;
+
+    }
 
 
     #diensten .card.show {
-        opacity: 1;
-        transform: translateX(0);
+
+        opacity:1;
+        transform:translateX(0);
+
     }
 
 
-    /* Registratie - van onderen */
+
+    /* Registratie */
+
     #registratie .card {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: all 0.6s ease;
+
+        opacity:0;
+        transform:translateY(40px);
+        transition:opacity 0.6s ease, transform 0.6s ease;
+
     }
+
 
     #registratie .card.show {
-        opacity: 1;
-        transform: translateY(0);
+
+        opacity:1;
+        transform:translateY(0);
+
     }
 
 
-    /* Opleiding - van rechts */
+
+    /* Opleiding / Nascholing GEEN animatie */
+
     #opleiding .card {
-        opacity: 0;
-        transform: translateX(40px);
-        transition: all 0.6s ease;
-    }
 
-    #opleiding .card.show {
-        opacity: 1;
-        transform: translateX(0);
+        opacity:1;
+        transform:none;
+        transition:none;
+
     }
 
 
-    /* kleine vertraging tussen de kaarten */
+
+    /* vertraging */
+
     #diensten .card:nth-child(2),
-    #registratie .card:nth-child(2),
-    #opleiding .card:nth-child(2) {
-        transition-delay: 0.15s;
+    #registratie .card:nth-child(2) {
+
+        transition-delay:0.15s;
+
     }
 
 
     #diensten .card:nth-child(3),
-    #registratie .card:nth-child(3),
-    #opleiding .card:nth-child(3) {
-        transition-delay: 0.3s;
+    #registratie .card:nth-child(3) {
+
+        transition-delay:0.3s;
+
     }
 
 }
-@media(max-width:900px) {
-
-    #diensten .card {
-        opacity: 0;
-        transform: translateX(-50px);
-        transition: 0.7s ease;
-    }
-
-    #diensten .card.show {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-
-    #registratie .card {
-        opacity: 0;
-        transform: translateY(50px);
-        transition: 0.7s ease;
-    }
-
-    #registratie .card.show {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-
-    #opleiding .card {
-        opacity: 0;
-        transform: translateX(50px);
-        transition: 0.7s ease;
-    }
-
-    #opleiding .card.show {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-}
-@media(max-width:900px) {
-
-    /* Tandheelkundige behandelingen */
-    #diensten .card {
-        opacity: 0;
-        transform: translateX(-40px);
-        transition: all 0.6s ease;
-    }
-
-    #diensten .card.show {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-
-    /* Registratie */
-    #registratie .card {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: all 0.6s ease;
-    }
-
-    #registratie .card.show {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-
-    /* Opleiding GEEN animatie */
-    #opleiding .card {
-        opacity: 1;
-        transform: none;
-        transition: none;
-    }
-
-}
+```
