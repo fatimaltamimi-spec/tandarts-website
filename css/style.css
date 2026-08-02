@@ -406,3 +406,26 @@ footer {
     }
 
 }
+.language-mobile {
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+
+    .language {
+        display: none;
+    }
+
+    .language-mobile {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .language-mobile a {
+        color: #12355B;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+}
