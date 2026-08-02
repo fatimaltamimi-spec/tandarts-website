@@ -16,24 +16,39 @@ window.addEventListener("scroll", function () {
     lastScroll = currentScroll;
 
 });
+
+
 const menuButton = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".nav-menu");
 
-menuButton.addEventListener("click", () => {
-    menu.classList.toggle("active");
-});
+if (menuButton) {
+    menuButton.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+}
+
+
+
 const cards = document.querySelectorAll("#diensten .card, #registratie .card");
 
 const observer = new IntersectionObserver((entries) => {
+
     entries.forEach(entry => {
+
         if (entry.isIntersecting) {
             entry.target.classList.add("show");
         }
+
     });
+
 }, {
     threshold: 0.2
 });
 
+
+cards.forEach(card => {
+    observer.observe(card);
+});
 cards.forEach(card => {
     observer.observe(card);
 });
