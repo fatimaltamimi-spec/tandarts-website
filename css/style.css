@@ -424,3 +424,10 @@ footer {
 
 ```
 ```
+.education-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 20px auto 0 auto;
+}
