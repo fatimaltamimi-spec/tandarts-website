@@ -22,7 +22,7 @@ const menu = document.querySelector(".nav-menu");
 menuButton.addEventListener("click", () => {
     menu.classList.toggle("active");
 });
-const cards = document.querySelectorAll("#diensten .card, #registratie .card, #opleiding .card");
+const cards = document.querySelectorAll("#diensten .card, #registratie .card");
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
