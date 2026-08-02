@@ -548,3 +548,9 @@ footer {
     }
 
 }
+/* Nascholing altijd zichtbaar */
+#opleiding .card {
+    opacity: 1;
+    transform: none;
+    transition: none;
+}
