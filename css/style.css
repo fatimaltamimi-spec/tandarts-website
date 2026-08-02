@@ -213,14 +213,16 @@ h3 {
 
 /* ================= ICONEN OPLEIDINGEN ================= */
 
+/* ================= ICONEN OPLEIDINGEN ================= */
+
 .card img.education-icon {
-    width:30px;
-    height:30px;
-    max-width:30px;
-    max-height:30px;
+    width:70px;
+    height:70px;
+    max-width:70px;
+    max-height:70px;
     object-fit:contain;
     display:block;
-    margin:15px auto 0 auto;
+    margin:20px auto 0 auto;
 }
 
 
@@ -417,11 +419,11 @@ footer {
     }
 
 
-    .card img.education-icon {
+   .card img.education-icon {
 
-        width:25px;
-        height:25px;
+    width:60px;
+    height:60px;
 
-    }
+}
 
 }
