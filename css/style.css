@@ -390,3 +390,19 @@ footer {
     height: auto;
     display: block;
 }
+.language-mobile {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    .language {
+        display: none;
+    }
+
+    .language-mobile {
+        display: block;
+        margin-top: 15px;
+    }
+
+}
