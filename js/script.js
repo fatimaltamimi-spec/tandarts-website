@@ -52,3 +52,11 @@ cards.forEach(card => {
 cards.forEach(card => {
     observer.observe(card);
 });
+// Menu sluiten wanneer gebruiker op een link klikt
+const menuLinks = document.querySelectorAll(".nav-menu a");
+
+menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("active");
+    });
+});
